@@ -1,7 +1,8 @@
+@charset "utf-8";
+
 /* CIT 230 - Assignment Portal CSS Template */
 
-@charset "utf-8";
-* { margin: 2; box-sizing: border-box; }
+* { margin: 0.5rem; box-sizing: border-box; }
 body {font-size: 12px;
     line-height: 30px;
     font-family:  Ubuntu, sans-serif, Arial, Helvetica ;
