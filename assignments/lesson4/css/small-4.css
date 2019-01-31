@@ -1,0 +1,65 @@
+@charset "utf-8";
+body {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 0;
+    font-family: 'Nosifer', cursive;
+    font-size: 30px;
+    color: #229ecf;
+}
+header, footer {
+    background: #040458;
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+}
+header img {
+    float: left;
+    width: 90px;
+    height: 90px;
+    
+}
+header .motto {
+    font-style: italic;
+}
+ul li {
+    background:#48575f;
+    display: block;
+    padding: 0.2em;
+    font-size: 30px;
+    
+}
+li a{
+    text-decoration: none;
+    text-anchor: middle;
+    color: #ffffff;
+    font-family: 'Segoe UI';
+    padding: 8px 16px;
+}
+main {
+    margin: 2em 3em;
+}
+div .motto {
+    padding: 1em;
+}
+nav a.hover {
+color: #000000;
+background: #808080
+
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    text-align: center;
+}
+li a:hover {
+    background-color: #0b082b;
+    width: 5rem;
+    display: ruby-base;
+}
