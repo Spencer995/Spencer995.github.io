@@ -116,7 +116,7 @@ ul li
 {
     background-color:#48575f;
     float: left;
-    width: 192px;
+    width: 224px;
     height: 40px;
     line-height: 40px;
     text-align: right;
@@ -153,6 +153,9 @@ nav
 ul li a:hover 
 {
     background-color: #171527;
+}
+nav button {
+    display: none;
 }
 .active
 {

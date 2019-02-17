@@ -7,39 +7,45 @@
     <meta name="description" content="town planning website">
     <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" media="(min-width: 600px)" href="css/large-5.css">
-    <link rel="stylesheet" media="(max-width: 600px)" href="css/small-5.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="css/large-6.css">
+    <link rel="stylesheet" media="(max-width: 600px)" href="css/small-6.css">
     <link rel="shortcut icon" type="image/ico" href="images/weather.ico">      
-
+    <script src="scripts/hambugger.js"></script>
 </head>
 <body>
     <header>
         <h1>
-            <img src="images/logo.png" alt="my logo">
+            <figure>
+                <img src="images/logo.png" alt="my logo">
+            </figure>
             theweatherbank.com
         </h1>
         <div class="motto">
             Weather for all, Anytime, Anywhere 
         </div>
     </header>
-        <div >
-            <nav>
-                <ul class="navdiv">
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="../lesson4/preston-4.html">Home</a></li>
-                    <li><a href="#" class="active">Preston</a></li>
-                    <li><a href="#">Soda Springs</a></li>
-                    <li><a href="#">Fish haven</a></li>
-                    <li><a href="#">Storm center</a></li>
-                    <li><a href="#">Gallery</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primNav" class="hide">
+                <li><a href="../lesson4/preston-4.html">Home</a></li>
+                <li><a href="#" class="active">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish haven</a></li>
+                <li><a href="#">Storm center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    
         <main>
                 <h2>Preston Idaho</h2>
                 <div class="herodiv">
                     <div class="hero-img">
-                        <img src= "images/freebie.jpg" alt="Open View of a feild">
+                        
+                        <img src= "images/franklinOriginal800.jpg" alt="Open View of a feild" sizes="80vw"
+                             srcset="images/franklinOriginal200.jpg 200w,
+                             images/franklinOriginal500.jpg 500w,
+                             images/franklinOriginal800.jpg 800w,
+                             images/franklinOriginal1200.jpg 1200w">
                     </div>
                     <section class="stats">
                         
@@ -72,8 +78,8 @@
                 </table>
                 <div class="site-info">
                     <h3>Reasons to Laugh</h3>
-                    <img src="images/laughter.jpg" alt="A man laughing">
-                    <p> Laughter helps us to transcend ourselves, and I need that help. Too often I take myself far too seriously.
+                    <img src="images/laughter.jpg" alt="A man laughing" sizes="20vw">
+                    <p>Laughter helps us to transcend ourselves, and I need that help. Too often I take myself far too seriously.
                         There is a danger of taking ourselves, our beliefs and our life too seriously. Fanatics, it seems to me, see nothing as funny. 
                         Here’s a suggest The next time you’re in the middle of an argument, start laughing – not in a derogatory tone, but in the jovial sense of being in on a good joke.
                          Then see if the anger begins to melt away and if you can find a more creative way to handle things.
@@ -94,7 +100,8 @@
         
     
     <footer>
-         &copy;2019 theweatherbank.com  | Spencer Nweke | 08/02/2019
+         &copy;2019 theweatherbank.com  | Spencer Nweke | <span id="date"></span>
     </footer>
+    <script src="scripts/curentdate.js"></script>    
 </body>
 </html>
