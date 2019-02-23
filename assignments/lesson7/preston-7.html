@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Town Plannig Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="town planning website">
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" media="(max-width: 599px)" href="css/small-7.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="css/medium-7.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="css/large-7.css">
+    <link rel="shortcut icon" type="image/ico" href="images/weather.ico">      
+    <script src="scripts/hambugger.js"></script>
+    
+</head>
+<body>
+    <header>
+        
+                <img src="images/logo.png" alt="my logo">
+        <h1>
+            theweatherbank.com
+        </h1>
+        <div class="motto">
+            Weather for all, Anytime, Anywhere 
+        </div>
+    </header>
+        <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primNav" class="hide">
+                <li><a href="../lesson4/preston-4.html">Home</a></li>
+                <li><a href="#" class="active">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish haven</a></li>
+                <li><a href="#">Storm center</a></li>
+                <li><a href="gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    
+        <main class="mainbody">
+                <h2 >Preston Idaho</h2>
+                <div class="herodiv">
+                    <div class="hero-img">
+                        
+                        <img src= "images/franklinOriginal800.jpg" alt="Open View of a feild" sizes="80vw"
+                             srcset="images/franklinOriginal200.jpg 200w,
+                             images/franklinOriginal500.jpg 500w,
+                             images/franklinOriginal800.jpg 800w,
+                             images/franklinOriginal1200.jpg 1200w">
+                    </div>
+                    <section class="stats">
+                        
+                        <h3>Weather Summary</h3>
+                        <p>High: <span id="temp">70</span>&deg;F</p>
+                        <p>Currently: Sunny</p>
+                        <p>Humidity: <span id="humid">69</span>&#37;</p>
+                        <p>Wind Speed: <span id="speed">5</span>mph</p>
+                        <p>Wind Chill: <span id="chill"></span>&deg;F</p>
+                        
+                    </section>
+                </div>
+                <table>
+                    <caption>
+                        5-day Weather Forecast
+                    </caption>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tues</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                    </tr>
+                    <tr>
+                            
+                        <td>77&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>89&deg;F</td>
+                        <td>82&deg;F</td>
+                        <td>80&deg;F</td>
+                     <script src="scripts/windchill.js"></script>
+                    </tr>
+                </table>
+                <div class="site-info">
+                    <h3>Reasons to Laugh</h3>
+                    <img src="images/laughter.jpg" alt="A man laughing">
+                    <p>Laughter helps us to transcend ourselves, and I need that help. Too often I take myself far too seriously.
+                        There is a danger of taking ourselves, our beliefs and our life too seriously. Fanatics, it seems to me, see nothing as funny. 
+                        Here’s a suggest The next time you’re in the middle of an argument, start laughing – not in a derogatory tone, but in the jovial sense of being in on a good joke.
+                         Then see if the anger begins to melt away and if you can find a more creative way to handle things.
+                         I’ve done this with my kids and it actually works. And you know what else? 
+                         Now I know that when I think about doing it and don’t, that I have lost my perspective.<br>
+                         Children laugh on average 200 times a day and adults only 26 times a day. 
+                         How many times a day do you experience the rich joy of laughter? 
+                         If we want to be happier, healthier, and more productive we seriously need to make time to laugh. 
+                         Because when we laugh, when we really laugh, deep from the belly… we feel alive! <strong>Start looking for more reasons to laugh today.</strong> <br><br>
+                         Author: Babara Lee
+                    </p>
+
+                </div>
+
+        </main>
+                
+            
+    <footer>
+         &copy;2019 theweatherbank.com  | Spencer Nweke  <br><span id="date"></span>
+    </footer>
+    <script src="scripts/curentdate.js"></script>    
+</body>
+</html>
