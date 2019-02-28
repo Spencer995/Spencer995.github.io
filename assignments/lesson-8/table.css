@@ -1,0 +1,39 @@
+table, th, td{
+    border: 1px solid rgb(190, 158, 158);
+    border-collapse: collapse;
+    
+}
+table{
+    margin: 10px auto;
+    padding: 10em 0 0 0;
+    box-shadow: 8px 8px 12px rgb(7, 45, 95);
+}
+html{
+    font-family: 'Ubuntu', sans-serif;
+}
+td, th{
+    text-align: center;
+    padding: 10px;
+}
+thead{
+    font-size: 20px;
+    background-color:  #7fb9c2;
+}
+tfoot{
+    font-size: smaller;
+    background-color:  #7fb9c2;
+}
+tbody th{
+    background-color:  #628ca6;
+    color: #fff;
+}
+tbody tr:not(:first-child):nth-child(odd) {background-color: #e7ffed;}
+tbody tr:not(:first-child):nth-child(even) {background-color:#e7f0ed; }
+#sales{
+    background-color: #628ca6;
+}
+h2{
+    margin: 10px;
+    padding: 1em 0;
+    color: rgb(77, 219, 219);
+}
