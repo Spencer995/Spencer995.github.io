@@ -248,7 +248,7 @@ select{
 }
 #thanks h1{
 text-align: center;
-color: aqua;
+color: rgb(4, 99, 99);
 }
 #thanks h3{
     padding: 2em;
