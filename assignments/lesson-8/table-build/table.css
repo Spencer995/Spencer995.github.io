@@ -6,7 +6,7 @@ table, th, td{
 table{
     margin: 10px auto;
     padding: 10em 0 0 0;
-    box-shadow: 8px 8px 12px rgb(7, 45, 95);
+    box-shadow: 8px 8px 12px #a6bbab;
 }
 html{
     font-family: 'Ubuntu', sans-serif;
@@ -31,6 +31,7 @@ tbody tr:not(:first-child):nth-child(odd) {background-color: #e7ffed;}
 tbody tr:not(:first-child):nth-child(even) {background-color:#e7f0ed; }
 #sales{
     background-color: #628ca6;
+    color: #fff;
 }
 h2{
     margin: 10px;
