@@ -32,7 +32,12 @@ h1
             width: 10rem;
             height: 50rem;
             float: right;
+            border-radius: 4px;
+            box-shadow: 5px 10px 15px rgb(85, 69, 69);
         }
         footer {
             font-size: 13px;
         }
+    a:hover{
+        color: rgb(7, 36, 7);
+    }
