@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Town Plannig Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="town planning website">
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+    <link rel="stylesheet" href="css-sty/normalize.css">
+    <link rel="stylesheet" media="(max-width: 599px)" href="css/small-8.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="css/medium-8.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="css/large-8.css">
+    <link rel="shortcut icon" type="image/ico" href="images/weather.ico">      
+    <script src="scripts/hambugger.js"></script>
+    
+
+
+</head>
+<body>
+    <header>
+        
+                <img src="images/logo.png" alt="my logo">
+        <h1>
+            theweatherbank.com
+        </h1>
+        <div class="motto">
+            Weather for all, Anytime, Anywhere 
+        </div>
+    </header>
+        <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primNav" class="hide">
+                <li><a href="../lesson4/preston-4.html"  class="active">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish haven</a></li>
+                <li><a href="stormcenter.html">Storm center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
+            </ul>
+        </nav>
+    
+        <main class="mainbody">
+            
+                <div class="towndiv">
+
+                    <div id="townInfo">
+
+                    </div>
+                   
+                </div>
+                <script>
+                        var divide = document.querySelector('#townInfo');
+                        var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+                        var request = new XMLHttpRequest();
+                        request.open('GET', requestURL);
+                        request.responseType = 'json';
+                        request.send();
+                        request.onload = function() {
+                          var townData = request.response;
+                          insertArticle(townData);
+                          townInfo(townData);
+                        }
+                        function townInfo(jsonItem) {
+                           
+                            var town=jsonItem['towns'];
+                            for(var i=0; i < jsonItem.lenght; i++);{
+                                if(town[i].name =='Fish Haven' || town[i].name == 'Preston'  || town[i].name == 'Soda Springs'){
+                            
+                                var article = document.createElement('article');
+                                var h4Name = document.createElement('h4');
+                                var h5Tag = document.createElement('h5')
+                                var myPara1 = document.createElement('p');
+                                var myPara2 = document.createElement('p');
+                                var myPara3 = document.createElement('p');
+                                h4Name.textContent = town[i].name;
+                                h5Tag.textContent = town[i].motto;
+                                myPara1.textContent = 'Year Founded: ' + town[i].yearFounded;
+                                myPara2.textContent = 'Population: ' + town[i]. currentPopulation;
+                                myPara3.textContent = 'Annual Rainfall: ' + town[i].averageRainfall
+                            
+                                article.appendChild(h4Name);
+                                article.appendChild(h5Tag);
+                                article.appendChild(myPara1);
+                                article.appendChild(myPara2);
+                                article.appendChild(myPara3);
+                                divide.appendChild(article);
+                            }
+                        }
+                        }
+                    </script>
+               
+                <div class="site-info">
+                    <h3>The Site Purpose</h3>
+                    <img src="images/image4.jpg" alt="A weather photo showing a where sun, clouds and rainbows meet">
+                    <p>
+                            The purpose of this site is to provide quick, easy and ready to use weather information to users.
+                            The site will be designed to updated automatically, according to real time weather condition on
+                            selected area. The site will provide weather information of major cities and sub-localities across
+                            the world.
+                            The site is also designed to give a live view of what a given destination looks like and the time.
+                            Everybody needs to know about the weather, so why not make it available to everyone in a way so easy it 
+                            seems almost seamless. That is simply the purpose of <strong>theweatherbank.com</strong>. <br>
+                            The site is designed to suit all ages, and people from all works of life, this is done that to allow anyone
+                            who uses or needs to use the site to easily access weather information with little or no help at all.
+                           <p> <strong>Use the <em>weatherbank.com</em> today, and love the weather like never before. </strong> </p>
+                    </p>
+
+                </div>
+
+        </main>
+     <footer class="mapfooter" >
+        <img src="images/map2.jpg" alt="A map Snippet of the areas">
+        <section>
+            <h4>Contact Information</h4>
+            <p>Phone: +234703479401</p>
+            <p>Email: <a href="info@theweatherbank.com">info@theweatherbank.com</a></p>
+            <p>Head Office: 114 GRA Phase 2 Road <br> Port-Harcourt, Nigeria.</p>
+        </section>
+     </footer>           
+            
+    <footer>
+         &copy;2019 theweatherbank.com  | Spencer Nweke  <br><span id="date"></span>
+    </footer>
+    <script src="scripts/curentdate.js"></script>    
+</body>
+</html>
