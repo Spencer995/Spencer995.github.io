@@ -63,23 +63,23 @@
                         function townInfo(jsonItem) {
                            
                             var town=jsonItem['towns'];
-                            for(var i=0; i < jsonItem.lenght; i++);{
+                            for(var i=0; i < town.length; i++);{
                                 if(town[i].name =='Fish Haven' || town[i].name == 'Preston'  || town[i].name == 'Soda Springs'){
                             
                                 var article = document.createElement('article');
                                 var h4Name = document.createElement('h4');
-                                var h5Tag = document.createElement('h5')
+                                var h5Motto = document.createElement('h5')
                                 var myPara1 = document.createElement('p');
                                 var myPara2 = document.createElement('p');
                                 var myPara3 = document.createElement('p');
                                 h4Name.textContent = town[i].name;
-                                h5Tag.textContent = town[i].motto;
+                                h5Motto.textContent = town[i].motto;
                                 myPara1.textContent = 'Year Founded: ' + town[i].yearFounded;
                                 myPara2.textContent = 'Population: ' + town[i]. currentPopulation;
                                 myPara3.textContent = 'Annual Rainfall: ' + town[i].averageRainfall
                             
                                 article.appendChild(h4Name);
-                                article.appendChild(h5Tag);
+                                article.appendChild(h5Motto);
                                 article.appendChild(myPara1);
                                 article.appendChild(myPara2);
                                 article.appendChild(myPara3);
