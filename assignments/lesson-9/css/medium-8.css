@@ -280,3 +280,33 @@ select{
     #thanks h3 em{
         color: rgb(168, 5, 5);
 }
+/* Syling for the Home Page */
+#townInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#townInfo article{
+    margin: 0 1.5%;
+    width: 30%;
+    box-sizing: border-box;
+    border: 5px solid gray;
+    text-align: center;
+}
+
+#townInfo article img{
+    width: 100%;
+    box-shadow: 2px 3px 5px;
+    border-radius: 3px;
+}
+
+#townInfo article h3{
+    color: rgb(104, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-bottom: 1px solid #333;
+}
+ #townInfo article h4{  
+    color: rgb(2, 2, 117);
+    font-style: italic;
+}
