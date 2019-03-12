@@ -39,8 +39,8 @@ header, footer
     justify-content: flex-start;
     padding: 10px;
     margin-right: 1em;
-    width: 35vw;
-    height: 20vw;
+    width: 30vw;
+    height: 18vw;
     overflow: auto;
 }
 .mapfooter section  a{

@@ -32,7 +32,7 @@ header, footer
     justify-content: flex-start;
     padding: 3.5px;
     margin: 1em auto;
-    width: 90vw;
+    width: 75vw;
     height: auto;
     overflow: auto;
 }
@@ -284,10 +284,12 @@ select{
     flex: 1;
     margin-bottom: 10px;
     background-color: #fff;
+    max-width: 65vw;
 }
 
 #townInfo article img{
     width: 95%;
+    height: 75%;
     border-radius: 4px;
 }
 
