@@ -33,6 +33,7 @@ header, footer
     border-radius: 10px;
     margin: 5px auto;
     padding: .5rem;
+    margin-top: 20px;
 }
 .mapfooter img{
     display: flex;
@@ -49,6 +50,10 @@ header, footer
 }
 .mapfooter section  a:hover{
     color: green;
+}
+.mapfooter section  h4{
+    color: aquamarine;
+    text-decoration: underline;
 }
 header img 
 {

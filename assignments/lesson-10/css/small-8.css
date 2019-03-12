@@ -27,6 +27,10 @@ header, footer
     border-radius: 10px;
 
 }
+.mapfooter section  h4{
+    color: aquamarine;
+    text-decoration: underline;
+}
 .mapfooter img{
     display: flex;
     justify-content: flex-start;
