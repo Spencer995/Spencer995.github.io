@@ -24,7 +24,9 @@ header, footer
     background-color: #1e262b;
     display: block;
     justify-content: space-around;
-    border-radius: 10px;
+    border-radius: 6px;
+    width: 85vw;
+    margin: 0 auto;
 
 }
 .mapfooter section  h4{
