@@ -4,7 +4,7 @@ body
     font-family: Helvetica;
     margin: 0;
     padding: 0;
-    background-color: #bbb;
+    background-color: rgb(146, 136, 136);
 }
 header h1 
 {
@@ -283,12 +283,12 @@ select{
     text-align: center;
     flex: 1;
     margin-bottom: 10px;
+    background-color: #fff;
 }
 
 #townInfo article img{
-    width: 100%;
-    box-shadow: 2px 3px 5px;
-    border-radius: 3px;
+    width: 95%;
+    border-radius: 4px;
 }
 
 #townInfo article h3{

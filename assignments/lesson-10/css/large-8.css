@@ -4,6 +4,7 @@ body
     font-family: Helvetica;
     margin: 0;
     padding: 0;
+    background-color: #bbb;
 }
 header h1 
 {
@@ -302,12 +303,13 @@ color: rgb(4, 99, 99);
     box-sizing: border-box;
     border: 5px solid gray;
     text-align: center;
+    background-color: gray;
+    border-radius: 4px
 }
 
 #townInfo article img{
-    width: 100%;
-    box-shadow: 2px 3px 5px;
-    border-radius: 3px;
+    width: 95%;
+    border-radius: 4px;
 }
 
 #townInfo article h3{

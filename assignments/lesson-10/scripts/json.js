@@ -26,7 +26,7 @@
                                 h4Motto.textContent = town[i].motto;
                                 myPara1.textContent = 'Year Founded: ' + town[i].yearFounded;
                                 myPara2.textContent = 'Population: ' + town[i].currentPopulation;
-                                myPara3.textContent = 'Annual Rainfall: ' + town[i].averageRainfall + "in";
+                                myPara3.textContent = 'Annual Rainfall: ' + town[i].averageRainfall + '"';
                                 
                                 if(town[i].name == 'Fish Haven'){
                                   townPhoto.setAttribute("src", "images/fishhaven.jpeg");
