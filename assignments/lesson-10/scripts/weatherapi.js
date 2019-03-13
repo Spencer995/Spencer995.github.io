@@ -6,11 +6,16 @@ weatherapi.onload = function() {
     let getWeather = JSON.parse(weatherapi.responseText);
     console.log(getWeather);
 
-    var math = getWeather.main.temp;
-    var math2 = math - 273.15;
-    var math3 = math2 * (9/5) + 32; 
-    var round = math3.toFixed(2);
+    var round = newFunction(getWeather);
 
     document.getElementById("name").innerHTML = getWeather.name;
     document.getElementById("current-temp").innerHTML = round;
+}
+
+function newFunction(getWeather) {
+    var math = getWeather.main.temp;
+    var math2 = math - 273.15;
+    var math3 = math2 * (9 / 5) + 32;
+    var round = math3.toFixed(2);
+    return round;
 }
