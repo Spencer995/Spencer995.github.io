@@ -1,0 +1,50 @@
+     var weatherSummary = document.querySelector('#weatherSummary');
+
+let forcastapi = new XMLHttpRequest;
+forcastapi.open('GET', 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=09cad4cd3e9b2194a02b2c79698e72d2', true);
+forcastapi.send();
+
+forcastapi.onload = function() {
+	getForcast = JSON.parse(forcastapi.responseText);
+	console.log(getForcast);
+	
+	var h3Header = document.createElement('h3');
+	var pCurrently = document.createElement('p');
+	var pHigh = document.createElement('p');
+	var pHumidity = document.createElement('p');
+	var pWindSpeed = document.createElement('p');
+	var pPercipitation = document.createElement('p');
+	var pWindChill = document.createElement('p');
+	var wTable = document.createElement('table');
+	var wCaption = document.createElement('caption');
+	var wThead = document.createElement('thead');
+	var wTr = document.createElement('tr');
+	var wTd = document.createElement('td');
+	
+	const weatherDesc = getForcast.list[0].weather[0];
+	const currWeather = getForcast.list[0];
+	
+	h3Header.innerHTML = 'Weather Summary';
+	pCurrently.innerHTML = 'Currently: <span id="sunny">' +  weatherDesc.main + '</span>';
+	pHigh.innerHTML = 'High: <span id="temp">' + Math.round(parseFloat(getForcast.list[0].main.temp)) + '</span>&deg;F';
+	pHumidity.innerHTML = 'Humidity: <span id="humid">' + Math.round(parseFloat(currWeather.main.humidity)) + '</span>&#37;';
+	pWindSpeed.innerHTML = 'Wind Speed: <span id="speed">' + Math.round(parseFloat(currWeather.wind.speed)) + '</span>';
+	pWindChill.innerHTML = 'Wind Chill: <span id="temp">' + Math.round(parseFloat(currWeather.wind.deg)) + '</span>&deg;F';
+	
+	
+	document.getElementById('mon').innerHTML = '<img src="http://openweathermap.org/img/w/' + getForcast.list[0].weather[0].icon + '.png" alt="icon"> <br />' + Math.round(parseFloat(getForcast.list[0].main.temp)) + '&deg;F';
+	document.getElementById('tue').innerHTML = '<img src="http://openweathermap.org/img/w/' + getForcast.list[1].weather[0].icon + '.png" alt="icon"> <br />' + Math.round(parseFloat(getForcast.list[1].main.temp)) + '&deg;F';
+	document.getElementById('wed').innerHTML = '<img src="http://openweathermap.org/img/w/' + getForcast.list[2].weather[0].icon + '.png" alt="icon"> <br />' + Math.round(parseFloat(getForcast.list[2].main.temp)) + '&deg;F';
+	document.getElementById('thur').innerHTML = '<img src="http://openweathermap.org/img/w/' + getForcast.list[3].weather[0].icon + '.png" alt="icon"> <br />' + Math.round(parseFloat(getForcast.list[3].main.temp)) + '&deg;F';
+	document.getElementById('fri').innerHTML = '<img src="http://openweathermap.org/img/w/' + getForcast.list[4].weather[0].icon + '.png" alt="icon"> <br />' + Math.round(parseFloat(getForcast.list[4].main.temp)) + '&deg;F';
+	
+	
+	
+	weatherSummary.appendChild(h3Header);
+	weatherSummary.appendChild(pCurrently);
+	weatherSummary.appendChild(pHigh);
+	weatherSummary.appendChild(pHumidity);
+	weatherSummary.appendChild(pWindSpeed);
+	weatherSummary.appendChild(pWindChill);
+}
+                        
