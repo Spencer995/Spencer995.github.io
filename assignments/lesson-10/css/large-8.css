@@ -353,5 +353,9 @@ color: rgb(4, 99, 99);
 }
 #tableInfo p a{
     text-decoration: none;
-    color: blue;
+    color: b;
+}
+#tableInfo p a:hover{
+    color: #040458;
+    font-size: 15px;
 }
