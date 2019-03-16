@@ -1,5 +1,5 @@
 let forcastapi = new XMLHttpRequest;
-forcastapi.open('GET', 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=09cad4cd3e9b2194a02b2c79698e72d2', true)
+forcastapi.open('GET', 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=09cad4cd3e9b2194a02b2c79698e72d2', true)
 forcastapi.send();
 
 forcastapi.onload = function() {
