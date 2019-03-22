@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Fish Haven Home Page</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="town planning website" name="description">
+	<link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/small-8.css" media="(max-width: 599px)" rel="stylesheet">
+	<link href="css/medium-8.css" media="(min-width: 600px)" rel="stylesheet">
+	<link href="css/large-8.css" media="(min-width: 1200px)" rel="stylesheet">
+	<link href="images/weather.ico" rel="shortcut icon" type="image/ico">
+	<script src="scripts/hambugger.js">
+	</script>
+</head>
+<body>
+	<header>
+		<a href="index.html"><img alt="my logo" src="images/logo.png"></a>
+		<h1>theweatherbank.com</h1>
+		<div class="motto">
+			Weather for all, Anytime, Anywhere
+		</div>
+	</header>
+	<nav class="clearfix">
+		<button onclick="toggleMenu()">&#9776;</button>
+		<ul class="hide" id="primNav">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="preston.html">Preston</a>
+			</li>
+			<li>
+				<a href="soda-springs.html">Soda Springs</a>
+			</li>
+			<li>
+				<a class="active" href="#">Fish haven</a>
+			</li>
+			<li>
+				<a href="stormcenter.html">Storm center</a>
+			</li>
+			<li>
+				<a href="gallery.html">Gallery</a>
+			</li>
+		</ul>
+	</nav>
+	<main class="mainbody">
+		<h2>Fish Haven, Idaho</h2>
+		<div class="herodiv">
+			<div class="hero-img"><img alt="Open View of a feild" sizes="80vw" src="images/fishhaven.jpeg" srcset="images/fishhaven.jpeg 200w, images/fishhaven.jpeg 500w, images/fishhaven.jpeg 800w, images/fishhaven.jpeg 1200w"></div>
+			<section class="stats">
+				<script src="scripts/weather-fish.js">
+				</script>
+				<h3>Weather Summary</h3>
+				<p>Currently: <span id="sunny">Sunny</span></p>
+				<p>High: <span id="temp"></span>&deg;F</p>
+				<p>Humidity: <span id="humid"></span>&#37;</p>
+				<p>Wind Speed: <span id="speed"></span>mph</p>
+				<p>Percipitation: <span id="curr-rain"></span></p>
+				<p>Wind Chill: <span id="chill"></span>&deg;F</p>
+			</section>
+		</div>
+		<div class="event-table">
+			<section id="events">
+				<script src="scripts/forecast-fish.js">
+				</script> 
+				<script src="scripts/events-fish.js">
+				</script>
+			</section>
+			<div id="tableInfo">
+				<script src="scripts/dynamicdate.js">
+				</script>
+				<table>
+					<caption>
+						5-day Weather Forecast
+					</caption>
+					<tr>
+						<th id="day1">Mon</th>
+						<th id="day2">Tues</th>
+						<th id="day3">Wed</th>
+						<th id="day4">Thu</th>
+						<th id="day5">Fri</th>
+					</tr>
+					<tr id="tData">
+						
+					</tr>
+				</table>
+				<p>Weather Information sourced from <a href="https://openweathermap.org" target="_blank">Openweathermap.org</a></p>
+			</div>
+		</div>
+		<div class="site-info">
+			<h3>Reasons to Laugh</h3><img alt="A man laughing" src="images/laughing.jpg">
+			<p>Laughter helps us to transcend ourselves, and I need that help. Too often I take myself far too seriously. 
+            There is a danger of taking ourselves, our beliefs and our life too seriously. Fanatics, it seems to me, see nothing as funny. 
+            Here’s a suggest The next time you’re in the middle of an argument, start laughing – not in a derogatory tone, but in the jovial sense of being in on a good joke. 
+            Then see if the anger begins to melt away and if you can find a more creative way to handle things. I’ve done this with my kids and it actually works. 
+            And you know what else? Now I know that when I think about doing it and don’t, that I have lost my perspective.<br>
+            Children laugh on average 200 times a day and adults only 26 times a day. How many times a day do you experience the rich joy of laughter? 
+            If we want to be happier, healthier, and more productive we seriously need to make time to laugh. 
+            Because when we laugh, when we really laugh, deep from the belly… we feel alive! 
+            <strong>Start looking for more reasons to laugh today.</strong><br>
+			<br>
+			Author: Babara Lee</p>
+		</div>
+	</main>
+	<footer class="mapfooter">
+		<img alt="A map Snippet of the areas" src="images/map2.jpg">
+		<section>
+			<h4>Contact Information</h4>
+			<p>Phone: +234703479401</p>
+			<p>Email: <a href="#">info@theweatherbank.com</a></p>
+			<p>Head Office: 114 GRA Phase 2 Road<br>
+			Port-Harcourt, Nigeria.</p>
+		</section>
+	</footer>
+	<footer>
+		&copy;2019 theweatherbank.com | Spencer Nweke<br>
+		<span id="date"></span>
+	</footer>
+	<script src="scripts/curentdate.js">
+	</script>
+</body>
+</html>

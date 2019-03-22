@@ -1,0 +1,20 @@
+body{
+    background-color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+h1{
+    color: gray;
+    font-style: italic;
+}
+#name{
+    color: rgb(236, 91, 91);
+    font-size: 20px;
+}
+#current-temp{
+    color: rgb(50, 44, 136);
+
+}
+p{
+    font-size: 18px;
+}

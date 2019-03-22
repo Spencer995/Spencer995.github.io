@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Gallery</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="town planning website" name="description">
+	<link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+	<link href="css-sty/normalize.css" rel="stylesheet">
+	<link href="css/small-8.css" media="(max-width: 599px)" rel="stylesheet">
+	<link href="css/medium-8.css" media="(min-width: 600px)" rel="stylesheet">
+	<link href="css/large-8.css" media="(min-width: 1200px)" rel="stylesheet">
+	<link href="images/weather.ico" rel="shortcut icon" type="image/ico">
+	<script src="scripts/hambugger.js">
+	</script>
+</head>
+<body>
+	<header>
+		<a href="index.html"><img alt="my logo" src="images/logo.png"></a>
+		<h1>theweatherbank.com</h1>
+		<div class="motto">
+			Weather for all, Anytime, Anywhere
+		</div>
+	</header>
+	<nav class="clearfix">
+		<button onclick="toggleMenu()">&#9776;</button>
+		<ul class="hide" id="primNav">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="preston.html">Preston</a>
+			</li>
+			<li>
+				<a href="soda-springs.html">Soda Springs</a>
+			</li>
+			<li>
+				<a href="fish-haven.html">Fish haven</a>
+			</li>
+			<li>
+				<a href="stormcenter.html">Storm center</a>
+			</li>
+			<li>
+				<a class="active" href="#">Gallery</a>
+			</li>
+		</ul>
+	</nav>
+	<main class="figure">
+		<h1>Weather Gallery</h1>
+		<div class="imgcontainer">
+			<figure>
+				<img alt="Summer day photo" src="images/image1.jpg">
+				<figcaption>
+					A clear Summer Weather
+				</figcaption>
+			</figure>
+			<figure>
+				<img alt="Lightning Bolt Viewed on a street" src="images/image2.jpg">
+				<figcaption>
+					A lightning Bolt Across a street
+				</figcaption>
+			</figure>
+			<figure>
+				<img alt="Beach View" src="images/image3.jpg">
+				<figcaption>
+					The view of a clear Weather on a Beach
+				</figcaption>
+			</figure>
+			<figure>
+				<img alt="Colorful Sky" src="images/image4.jpg">
+				<figcaption>
+					Lightning and Sun over a feild
+				</figcaption>
+			</figure>
+			<figure>
+				<img alt="Lightning effect on a sea" src="images/image5.jpg">
+				<figcaption>
+					Lightning struck on a sea
+				</figcaption>
+			</figure>
+			<figure>
+				<img alt="Snow covered feild" src="images/image6.jpg">
+				<figcaption>
+					A feild covered in fresh Snow
+				</figcaption>
+			</figure>
+			<figure>
+				<img alt="Slight tornado building over a city" src="images/image7.jpg">
+				<figcaption>
+					Torando forming over an area
+				</figcaption>
+			</figure>
+			<figure>
+				<img alt="Summer Weather" src="images/image8.jpg">
+				<figcaption>
+					Thanksgiving Weather
+				</figcaption>
+			</figure>
+			<figure>
+				<img alt="Rainbow over a feild" src="images/image9.jpeg">
+				<figcaption>
+					Rainbow over an open feild
+				</figcaption>
+			</figure>
+		</div>
+	</main>
+	<footer class="mapfooter">
+		<img alt="A map Snippet of the areas" src="images/map2.jpg">
+		<section>
+			<h4>Contact Information</h4>
+			<p>Phone: +234703479401</p>
+			<p>Email: <a href="#">info@theweatherbank.com</a></p>
+			<p>Head Office: 114 GRA Phase 2 Road<br>
+			Port-Harcourt, Nigeria.</p>
+		</section>
+	</footer>
+	<footer>
+		&copy;2019 theweatherbank.com | Spencer Nweke<br>
+		<span id="date"></span>
+	</footer>
+	<script src="scripts/curentdate.js">
+	</script>
+</body>
+</html>
