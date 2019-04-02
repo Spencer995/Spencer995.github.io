@@ -127,11 +127,17 @@ h2
 {
     margin: 1em 0 0 1em;
 }
+#author{
+    margin: 1em 0 0 1.5em;
+    font-size: smaller;
+    font-style: italic;
+}
 .site-info p
 {
     padding: 10px;
     font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 2rem;
 }
 .stats 
 {
