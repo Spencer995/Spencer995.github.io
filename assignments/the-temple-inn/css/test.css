@@ -66,7 +66,6 @@ ul li a:hover{ color: #e93a0f; text-shadow:0 0 0 20px #f36924;}
         border: 1px solid rgb(141, 1, 1);
         border-radius: 10px;
         width: 80vw;
-    
     }
     legend{
         padding: 0 5px 0 5px;
@@ -142,6 +141,7 @@ ul li a:hover{ color: #e93a0f; text-shadow:0 0 0 20px #f36924;}
         text-align: center;
         text-decoration: none;
         font-size: 20px;
+        margin: 3rem;
     }
     .temple-info img{
         position: relative;
@@ -171,6 +171,7 @@ ul li a:hover{ color: #e93a0f; text-shadow:0 0 0 20px #f36924;}
         padding: 10px;
         color: #000;
         color: #fff;
+        margin-top: 2rem;
     }
     footer a{
         text-decoration: none;
