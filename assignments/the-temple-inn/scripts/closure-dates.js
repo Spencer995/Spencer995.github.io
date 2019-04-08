@@ -4,10 +4,10 @@ var section = document.querySelector('#satemple');
                         request.responseType = 'json';
                         request.send();
                         request.onload = function() {
-                          var townData = request.response;
-                          townInfo(townData);
+                          var templeData = request.response;
+                          templeInfo(templeData);
                         }
-                        function townInfo(jsonItem) {
+                        function templeInfo(jsonItem) {
                            
                             var temple=jsonItem['temples'];
                             for(var i=0; i < temple.length; i++){
@@ -15,7 +15,7 @@ var section = document.querySelector('#satemple');
 
                                 var heading = document.createElement('h3');
                                 var myPara1 = document.createElement('p');
-                                var eventList = document.createElement('ul');
+                                var closureList = document.createElement('ul');
                             
                                 heading.textContent = 'Johannesburg, South-Africa Temple';
                                 myPara1.textContent = 'Closure Dates:';
@@ -23,12 +23,12 @@ var section = document.querySelector('#satemple');
                                 for(var j=0; j < closure.length; j++) {
                                 var listItem = document.createElement('li');
                                 listItem.textContent = temple[j];
-                                eventList.appendChild(listItem);
+                                closureList.appendChild(listItem);
                                 }
 
                                 section.appendChild(heading);
                                 section.appendChild(myPara1);
-                                section.appendChild(eventList);
+                                section.appendChild(closureList);
                     
                               }  
                         }
