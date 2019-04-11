@@ -5,45 +5,66 @@
     <title>The temple inn and suites | Home page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="The temple inn and suites| Home page">
-    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|Lobster|Fascinate+Inline" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/test.css">
-    <link rel="shortcut icon" type="image/ico" href="images/Capture-logo.ico">      
+    <link rel="shortcut icon" type="image/ico" href="images/icon.png">      
     <script src="scripts/hambugger.js"></script>
     
 </head>
 <body>
-    <header>
-        
-               <a href="#"> <img src="images/main-logo.PNG" alt="my logo"></a>
-        <h1>The Temple inn and suites</h1>
-        <div class="motto">
-            Feel At Home... 
-        </div>
+    <header class="clearfix">
+               <a href="index.html"> <img src="images/logo1.png" alt="my logo"></a>
     </header>
         <nav class="clearfix">
             <button onclick="toggleMenu()">&#9776;</button>
             <ul id="primNav" class="hide">
-                <li><a href="#">Temples</a></li>
-                <li><a href="test.html">Reservations</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
         <main class="clearfix">
 
-            <h1 id="reservepg"> Home Page </h1>
-            <div class="hero-image" class="clearfix">
-                <img src="images/image4.jpg" alt="hero-immage">
-            
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>The Temple Inn &amp; suites </h1>
+                <a href="reservation.html" class="button">Make A Reservation</a>
             </div>
-            <div id="temple-info"  >
-                <img src="images/image4.jpg" alt="Aba Nigeria Temple">
-                <h4>The Aba Nigeria Temple</h4>
-                <p> The Aba Nigeria Temple is the only operational temple in Nigeria, it was ddicated in August of 2005 by President Gordon B. Hinckley.</p>
-            </div>
-            <a href="test.html" class="button">Make A Reservation</a>
-
+        </div>
+        <div id="homepage-imgs">
+            <figure>
+                <img src="images/temple-sealing.jpg" alt="">
+                <figcaption>Temple Wedding Ceremony.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/sapporo-japan-foyer.jpg" alt="">
+                <figcaption>Waiting Room in the temple.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/fort-lauderdale-temple.jpg" alt="">
+                <figcaption>An instruction room in the temple.</figcaption>
+            </figure>
+        </div>
+        <div class="temples">
+                <a href="https://www.lds.org/temples/details/aba-nigeria-temple?lang=eng" target="_blank">  <img src="images/aba-nigeria-temple-lds.jpg" alt="london_england_temple"></a> 
+            <section id="engtemple">
+               <h3>Aba, Nigeria Temple</h3>
+               <p>The Aba, Nigeria Temple is the only operational temple in Nigeria. 
+                   It was dedicated by President Gordon B. Hinckley on 7 August, 2005. 
+                   The temple had been a long awaited blessing for Latter-Day Saints in Nigeria, 
+                   and since its dedicataion, it has been a great source of light and spiritual refinement for them.<br>
+                   Indeed, The temple is the house of the Lord.
+                </p>
+            </section>
+        </div>
+        <section id="homepage">
+            <h3>Contact</h3>
+            <p>Head Office: <a href="https://goo.gl/maps/Evy7qWBeYY82" target="-blank"> 4800 Montgomery Ln #300, Bethesda, MD 20814. USA.</a> </p>
+            <p>Email: <a href="#">Thetempleinn&amp;suite@tins.com</a> </p>
+            <p>Hotline: +2345533369 </p>
+        </section>
         </main>
         <footer>
              &copy; 2019 &bull; Spencer C. Nweke &bull; <a href="http://www.byui.edu/online" target="_blank">Brigham Young university - Idaho</a> <br> <span id="currdate"></span>
@@ -51,3 +72,7 @@
         </footer>
     </body>
     </html>
+
+
+    
+    

@@ -22,7 +22,7 @@ var section = document.querySelector('#satemple');
                                 var closure = temple[i].closure;
                                 for(var j=0; j < closure.length; j++) {
                                 var listItem = document.createElement('li');
-                                listItem.textContent = temple[j];
+                                listItem.textContent = closure[j];
                                 closureList.appendChild(listItem);
                                 }
 
@@ -33,3 +33,18 @@ var section = document.querySelector('#satemple');
                               }  
                         }
                         }
+
+// For Temple Town Weather Info
+let weatherapi = new XMLHttpRequest;
+weatherapi.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=Johannesburg,za&units=imperial&APPID=09cad4cd3e9b2194a02b2c79698e72d2', true)
+weatherapi.send();
+
+weatherapi.onload = function() {
+let getWeather = JSON.parse(weatherapi.responseText);
+console.log(getWeather);
+
+
+document.getElementById("weatherPara").innerHTML = "Current Weather:" + " " + getWeather.weather[0].main + "</br>"  + "Temperature:" + " " + getWeather.main.temp + " " + "&deg;F";
+    
+            
+}

@@ -9,54 +9,49 @@
     <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/test.css">
-    <link rel="shortcut icon" type="image/ico" href="images/weather.ico">      
+    <link rel="shortcut icon" type="image/ico" href="images/icon.png">      
     <script src="scripts/hambugger.js"></script>
 </head>
 <body>
     <header>
-        
-               <a href="#"> <img src="images/logo.png" alt="my logo"></a>
-        <h1>
-            The Temple inn and suites
-        </h1>
-        <div class="motto">
-            Feel At Home... 
-        </div>
+            <a href="index.html"> <img src="images/logo1.png" alt="my logo"></a>
     </header>
         <nav class="clearfix">
             <button onclick="toggleMenu()">&#9776;</button>
             <ul id="primNav" class="hide">
-                <li><a href="#" >Home</a></li>
-                <li><a href="#">Temples</a></li>
-                <li><a href="test.html" >Reservations</a></li>
-                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="reservation.html" >Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#" class="active">Contact Us</a></li>
              </ul>
         </nav>
         <main>
 
-            <h1 id="reservepg"> Suites </h1>
+            <h1 id="reservepg"> Contact Us </h1>
             <div class="imgcontainer">
-        
-                    <div class="contact-form">
-                            <form action="#" target="_self" method="GET">
-                    
-                                <label class="info"> Full Name* <input type="text" name="fname" placeholder="John Doe" required minlength="5" pattern="[A-Za-z' ]+"></label>
-                                <label class="info"> Phone* <input type="tel" name="phone" placeholder="12312345555" required></label>
-                                <label class="info"> Email*<input type="email" name="email" placeholder="identity@email.com" required ></label>
-                                <label class="info"><textarea id="comment" placeholder="Leave us a message to learn more. (Maximum 200 characters)" name="message" maxlength="200" rows="6"></textarea></label>
-                            
-                            <input type="submit" value="Contact Us" class="submitBtn">
-                        </form>
-                        <div class="contact-info">
-                            <div id="address">
+                    <div class="reserve">
+                            <form action="thanks.html" target="_self" method="GET">
+                                <fieldset>
+                                    <legend>Contact Us</legend>
+                                    <label class="info"> Full Name* <input type="text" name="fname" placeholder="John Doe" required minlength="5" pattern="[A-Za-z' ]+"></label>
+                                    <label class="info"> Phone* <input type="tel" name="phone" placeholder="12312345555" required></label>
+                                    <label class="info"> Email*<input type="email" name="email" placeholder="identity@email.com" required ></label>
+                                    <label class="info"><textarea id="comment" placeholder="Leave us a message to learn more. (Maximum 200 characters)" name="message" maxlength="200" rows="6"></textarea></label>
+                                    <input type="submit" value="Contact Us" class="submitBtn">
+                                </fieldset>
+                            </form>
+                    </div>
+                    <div class="temples">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2355.812205738709!2d-77.09718291338953!3d38.98327382776799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814%2C+USA!5e0!3m2!1sen!2sng!4v1554559335784!5m2!1sen!2sng" 
+                        width="500" height="400" frameborder="0" allowfullscreen></iframe>
+                        <section id="contact-page">
                                 <h3>The Temple Inn &amp; Suites</h3>
                                 <p>Head Office: <a href="https://goo.gl/maps/Evy7qWBeYY82" target="-blank"> 4800 Montgomery Ln #300, Bethesda, MD 20814. USA.</a> </p>
                                 <p>Email: <a href="#">Thetempleinn&amp;suite@tins.com</a> </p>
                                 <p>Hotline: +2345533369 </p>
-                            </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2355.812205738709!2d-77.09718291338953!3d38.98327382776799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814%2C+USA!5e0!3m2!1sen!2sng!4v1554559335784!5m2!1sen!2sng" 
-                        width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
+                        </section>
+                        <p id="weatherPara1"></p>
                     </div>
             <div>
                 
