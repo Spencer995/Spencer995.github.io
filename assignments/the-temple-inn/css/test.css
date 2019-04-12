@@ -17,7 +17,6 @@ header
 
 header img{margin: 1rem auto; padding: 0 0; width: 30vw;}
 nav{background-color:rgb(63, 17, 1); border-radius: 5px;}
-nav button{display: none;}
 .hide {
     display: flex;
     justify-content: center;
