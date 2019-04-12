@@ -1,5 +1,5 @@
-@charset "utf-8";
-body 
+@media only screen and (max-width: 599px) {
+    body 
 {
     font-family: Helvetica;
     margin: 0;
@@ -149,27 +149,27 @@ ul li a:hover{ color: #e93a0f; text-shadow:0 0 0 20px #f36924;}
         border: 2rem;
         outline: 0;
         display: inline-block;
-        padding: 15px 25px;
+        padding: 18px 30px;
         border-radius: 1rem;
         color: #fff;
-        font-size: 15px;
+        font-size: 17px;
         background-color: #641401;
         text-align: center;
         cursor: pointer;
-        margin-top: 3px;
+        margin-top: 20px;
         text-decoration: none;
       }
       .hero-text h1{
-          font-size: 35px;
+          font-size: 40px;
           font-family: 'Fascinate Inline', cursive;
       }
       
     .button:hover{box-shadow: 3px 4px 6px #4d4f55;}
     #homepage-imgs{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
-    #homepage-imgs figure img{ width: 70vw;}
+    #homepage-imgs figure img{ width: 25vw;}
     #homepage{
     margin: 1rem auto;
     background-color: #413f3e;
@@ -244,12 +244,12 @@ ul li a:hover{ color: #e93a0f; text-shadow:0 0 0 20px #f36924;}
 /* Missionary Page */
 .imgcontainer #figures{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     border-bottom: 1px solid rgb(23, 23, 44);
 }
 figure img{
     margin: 0 .5rem;
-    width: 70vw;
+    width: 40vw;
     height: auto;
     border-radius: 1rem;
     box-shadow: 5px 7px 15px rgb(42, 42, 99);
@@ -309,9 +309,8 @@ figcaption .room-name{
 }
 /* Contact Page */
 iframe{
-    width: 75vw;
-    height: 45vw;
-    margin: .3rem;
+    width: 30vw;
+    height: 20vw;
 }
 #contact-page a{
 color: #9c2c13;
@@ -327,7 +326,7 @@ display:flex;
 .temples{
     background-color: #1e262b;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     width: 85vw;
     border-radius: 10px;
     margin: 5px auto;
@@ -339,8 +338,8 @@ display:flex;
     justify-content: flex-start;
     padding: 10px;
     margin-right: 1em;
-    width: 75vw;
-    height: 45vw;
+    width: 30vw;
+    height: 18vw;
     overflow: auto;
 }
 .temples img:hover{
@@ -445,39 +444,13 @@ font-weight: bolder;
     text-align: center;
     margin-bottom: 80vw;
 }
-.gallery-div{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-}
-.gallery-div figure img{
-    width: 70vw;
-    height: 45vw;
-}    
-
-/* Reference Page */
-#ref{
-    border: 5px solid gray;
-    background-color: brown;
-    max-width: 80vw;
-    margin: 10px auto;
-}
-#ref h1{
-    text-align: center;
-    border-bottom: 1px solid #000; 
-}
-#ref ul li{
-    list-style-type: disc;
-    padding: .5rem;
-    margin-left: 2em;
-    font-size: 17px;
-}
-#ref p{
-    margin: 15px;
-    font-size: 18px;
-}
-#ref a{
-    color: rgb(17, 17, 94);
-}
-#ref a:hover{
-    text-decoration: underline;
+  
+    .gallery-div{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .gallery-div figure img{
+        width: 65vw;
+        height: auto;
+    }
 }

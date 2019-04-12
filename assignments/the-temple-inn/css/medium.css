@@ -1,0 +1,51 @@
+#homepage-imgs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#homepage-imgs figure img{ width: 22vw;}
+
+    .temples{
+        background-color: #1e262b;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 85vw;
+        border-radius: 10px;
+        margin: 5px auto;
+        padding: .5rem;
+        margin-top: 20px;
+    }
+    .temples img{
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px;
+        margin-right: 1em;
+        width: 30vw;
+        height: 18vw;
+        overflow: auto;
+    }
+    iframe{
+        width: 30vw;
+        height: 20vw;
+    }
+    .gallery-div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-div figure img{
+        width: 40vw;
+        height: auto;
+    }  
+    .imgcontainer #figures{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-bottom: 1px solid rgb(23, 23, 44);
+    }
+    figure img{
+        margin: 0 .5rem;
+        width: 40vw;
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: 5px 7px 15px rgb(42, 42, 99);
+    }
+    
