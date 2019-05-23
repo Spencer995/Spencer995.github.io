@@ -21,9 +21,9 @@ var section = document.querySelector('#satemple');
                                 myPara1.textContent = 'Closure Dates:';
                                 var closure = temple[i].closure;
                                 for(var j=0; j < closure.length; j++) {
-                                var listItem = document.createElement('li');
-                                listItem.textContent = closure[j];
-                                closureList.appendChild(listItem);
+                                  var listItem = document.createElement('li');
+                                  listItem.textContent = closure[j];
+                                  closureList.appendChild(listItem);
                                 }
 
                                 section.appendChild(heading);
