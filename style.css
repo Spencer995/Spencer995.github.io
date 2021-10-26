@@ -9,7 +9,7 @@ html{
     font-size: 10px;
 }
 body{
-    background: url('background_two.jpeg');
+    background: url(background_two.jpeg);
     /*background-position: 0 1000px;*/
     font-family: 'Roboto','Sans-serif';
     background-size: cover;
