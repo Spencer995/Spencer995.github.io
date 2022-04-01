@@ -1,0 +1,37 @@
+// COLOR PALETTE 
+$dark-blue: #243CB5;
+$mid-blue: #428DD4;
+$light-blue: #60CBDB;
+$yellow: #F5D873; 
+$orange: #FA8F43; 
+$white: white;
+
+$dark-text: #1F1F1F;
+$light-text: white;
+
+// TRANSPARENCY
+
+$main-transparency: 0.2;
+
+// PADDING + MARGIN
+
+$body-padding: 10px 15px;
+$h3-margin: 0px 10px -20px -10px;
+
+// TYPOGRAPHY
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Kodchasan:wght@300&display=swap');
+$primary-font: 'Fuzzy Bubbles', cursive;
+$secondary-font: 'Kodchasan', sans-serif; 
+
+// SMALL
+@import "partials/small";
+
+// LARGE
+@import "partials/large";
+
+// DROPDOWN MENU
+@import "partials/dropdown";
+
+// SVGs
+@import "partials/svgs";
+

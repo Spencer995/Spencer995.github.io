@@ -1,0 +1,142 @@
+// BODY, MAIN
+
+body {
+    background: linear-gradient(0deg, #428dd4 70%, #60cbdb 70%);
+    margin-bottom: 5%;
+}
+
+.page-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+// HEADERS
+
+header,
+[role="article"],
+footer {
+    background-color: transparentize($dark-blue, $main-transparency);
+}
+
+.wrapper {
+    background-color: transparent;
+}
+
+h1 {
+    
+    font-family: $primary-font;
+    color: $dark-text;
+    font-size: 1.7em;
+}
+
+h2 {
+    font-family: $secondary-font;
+    color: $orange;
+    font-size: 1em;
+}
+
+h3 {
+    background-color: transparentize($white, $main-transparency);
+    padding: $body-padding;
+    color: $dark-text;
+    font-family: $primary-font;
+    margin: $h3-margin;
+}
+
+.summary p:first-child {
+    background-color: transparentize($white, $main-transparency);
+    padding: $body-padding;
+    color: $dark-text;
+    margin: $h3-margin;
+    font-weight: bold;
+}
+
+.summary p:last-child {
+    color: $yellow;
+}
+
+// MAIN TEXT
+
+p,
+ul,
+a {
+    color: $light-text;
+    font-family: $secondary-font;
+}
+
+ul {
+    padding: 20px;
+    list-style-type: none;
+
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+p {
+    padding: $body-padding;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.design-name {
+    display: block;
+}
+
+.designer-name {
+    font-weight: lighter;
+    color: $light-blue;
+}
+
+// FOOTER
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-family: $secondary-font;
+    word-spacing: 20px;
+    margin: 20px 0px;
+    & a{
+        color: $orange;
+    }
+}
+
+// ALIGNMENT FIXES
+
+[role="article"]::before {
+    content: " ";
+    white-space: pre;
+    display: block;
+}
+
+// Flex
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+[role="banner"] {
+    order: -1;
+    margin-bottom: 1rem;
+}
+
+.summary {
+    order: 0;
+    margin-bottom: 1rem;
+}
+
+.preamble {
+    order: 4;
+}
+
+.sidebar {
+    order: 1;
+}

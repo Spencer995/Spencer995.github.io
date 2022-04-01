@@ -1,0 +1,112 @@
+@media screen and (max-width:900px) {
+    .sidebar {
+        display: flex;
+        padding: .1em;
+        padding-bottom: 1em;
+    }
+
+    .wrapper {
+        background-color: $dark-blue;
+        width: 100%;
+        padding: 12px 16px;
+        z-index: 1;
+        align-content: center;
+        display: flex;
+        justify-content: space-around;
+        height: 3em;
+    }
+
+    div#design-archives,
+    div#design-selection,
+    div#zen-resources,
+    div.wrapper h3 {
+        display: flexbox;
+        font-size: medium;
+        text-align: center;
+
+    }
+
+    div.wrapper h3 {
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+    }
+
+    .main.supporting {
+        order: 2;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+
+    }
+
+    .zen-resources>ul {
+        padding-top: 1.7em;
+    }
+
+    nav {
+        padding-top: 1em;
+    }
+
+    ul>li {
+        background-color: $dark-blue;
+        list-style-type: none;
+    }
+
+    ul>li>a,
+    ul>li {
+        opacity: 0;
+        color: $light-text;
+        padding: 11px;
+        padding-left: 5px;
+        margin: 0;
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+        transition: all 500ms ease-in-out;
+        z-index: 100;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    .design-selection:hover>nav>ul>li,
+    .design-selection:hover>nav>ul>li>a {
+        opacity: 1;
+    }
+
+    .design-archives:hover>nav>ul>li,
+    .design-archives:hover>nav>ul>li>a {
+        opacity: 1;
+    }
+
+    .zen-resources:hover>ul>li,
+    .zen-resources:hover>ul>li>a {
+        opacity: 1;
+    }
+
+}
+
+@media screen and (max-width:440px) {
+
+    div#design-archives,
+    div#design-selection,
+    div#zen-resources,
+    div.wrapper h3 {
+        display: flexbox;
+        font-size: small;
+        text-align: center;
+
+    }
+
+    div.wrapper h3 {
+        padding: 10;
+        margin: 0;
+    }
+
+    div.wrapper {
+        padding: 0;
+    }
+}

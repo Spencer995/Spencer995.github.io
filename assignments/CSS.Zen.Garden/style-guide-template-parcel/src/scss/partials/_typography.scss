@@ -1,0 +1,57 @@
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+h1 {
+    font-family: $primary-font;
+    color: black;
+}
+
+p {
+    font-family: $secondary-font;
+    color: $color-4;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 0 0.4em;
+
+    @include MQ(S) {
+        font-size: 3.2rem;
+    }
+
+    @include MQ(M) {
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    font-family: $secondary-font;
+    margin: 1em 0;
+    color: lighten(black, 10%);
+
+    @include MQ(S) {
+        font-size: 1.8rem;
+        margin: 1em 0 1.4em;
+    }
+}
+
+
+p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: lighten($color-4, 25%);
+
+    a {
+        color: $color-1;
+        text-decoration: underline;
+    }
+
+    @include MQ(S) {
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+}

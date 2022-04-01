@@ -1,0 +1,247 @@
+// HEADING FISH
+
+div h3::before, #zen-summary p:first-child::before {
+    content: "";
+    display: inline-block;
+    background: url(src/assets/fish-orange-no-eye.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    top: 8px;
+    width: 30px;
+    height: 20px;
+    margin: -10px 10px 0 0;
+}
+
+.design-selection h3::before, .design-archives h3::before, .zen-resources h3::before {
+    display: none;
+}
+
+// BODY CLOUDS
+
+.page-wrapper::before {
+    content: "";
+    display: inline-block;
+    background: url(src/assets/cloud.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 20px;
+    left: -50px;
+    width: 400px;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.page-wrapper::after {
+    content: "";
+    display: inline-block;
+    background: url(src/assets/cloud.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 300px;
+    right: 0px;
+    width: 450px;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+// FISH
+
+.zen-resources::after {
+    display: none;
+}
+
+.design-archives::after {
+    display: none;
+}
+
+.extra1, .extra2 {
+    align-items: center;
+}
+
+.extra1::after {
+    content: "";
+    display: inline-block;
+    background: url(src/assets/fish-yellow.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    top: 40px;
+    left: 50px;
+    width: 300px;
+    height: 200px;
+}
+
+.extra2::after {
+    content: "";
+    display: inline-block;
+    background: url(src/assets/fish-orange.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    top: 20px;
+    left: 150px;
+    width: 230px;
+    height: 130px;
+}
+
+// LOGO IMAGE/TEXT
+
+
+header {
+    z-index: 0;
+    height: 110px;
+
+    & h1 {
+        position: relative;
+        top: -45px;
+        left: 60px;
+    }
+
+    & h2 {
+        position: relative;
+        top: -70px;
+        left: 100px;
+    }
+
+    &::before {
+        content: "";
+        display: inline-block;
+        background: url(src/assets/cloud-blue.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        top: 15px;
+        left: 20px;
+        z-index: -1;
+        width: 150px;
+        height: 60px;
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        background: url(src/assets/cloud.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        top: -160px;
+        left: 90px;
+        z-index: -1;
+        width: 240px;
+        height: 80px;
+    }
+    
+}
+
+
+// LARGE SCREEN
+
+@media screen and (min-width:900px) {
+
+    // HEADING FISH
+
+    header {
+
+        height: 130px;
+        
+        & h1 {
+            top: -60px;
+            left: 70px;
+            font-size: 2em;
+        }
+    
+        & h2 {
+            top: -90px;
+            left: 130px;
+            font-size: 1.2em;
+        }
+    
+        &::before {
+            top: 15px;
+            left: 30px;
+            width: 200px;
+            height: 80px;
+        }
+    
+        &::after {
+            top: -200px;
+            left: 120px;
+            width: 280px;
+            height: 100px;
+        }
+        
+    }
+
+    .design-selection h3::before, .design-archives h3::before, .zen-resources h3::before {
+        display: inline-block;
+    }
+
+    // FISH
+
+    .zen-resources {
+        height: 300px;
+    }
+    
+    .zen-resources::after {
+        content: "";
+        display: inline-block;
+        background: url(src/assets/fish-orange.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        top: 23vw;
+        left: 6vw;
+        width: 230px;
+        height: 230px;
+    }
+    
+    .design-archives {
+        height: 150px;
+        margin-bottom: 15px;
+    }
+    
+    .design-archives::after {
+    
+        content: "";
+        display: inline-block;
+        background: url(src/assets/fish-yellow.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        top: 29vw;
+        left: 2vw;
+        width: 300px;
+        height: 300px;
+    }
+
+    .extra1::after {
+        display: none;
+    }
+
+    .extra2::after {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width:2000px) {
+
+    .zen-resources::after {
+        top: 11vw;
+    }
+
+    .design-archives::after {
+        top: 15vw;
+        
+    }
+
+}
+
+

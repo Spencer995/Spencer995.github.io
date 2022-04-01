@@ -1,0 +1,118 @@
+header {
+    background-color: $color-2;
+  }
+  
+  .cd-logo {
+    /* logo box style */
+    background-color: $color-1;
+    width: 120px;
+  
+    @include MQ(M) {
+      width: 180px;
+    }
+  }
+  
+  .cd-main-nav {
+    /* main navigation background color - full screen on small devices */
+    background: $color-2;
+  
+    li a {
+      color: $color-5;
+      border-color: lighten($color-2, 5%);
+    }
+  
+    @include MQ(M) {
+      li a {
+        color: lighten($color-2, 40%);
+  
+        &.selected {
+          color: $list-items;
+          box-shadow: 0 2px 0 $color-1;
+        }
+  
+        &:hover {
+          color: $color-5;
+        }
+      }
+    }
+  }
+  
+  .cd-nav-trigger span {
+    /* hamburger menu */
+    background-color: $color-5;
+  
+    &::before,
+    &::after {
+      /* upper and lower lines */
+      background-color: $color-5;
+    }
+  }
+  
+  .nav-is-visible .cd-nav-trigger span {
+    /* hide line in the center on mobile when nav is visible */
+    background-color: rgba($color-5, 0);
+  
+    &::before,
+    &::after {
+      /* preserve visibility of upper and lower lines - close icon */
+      background-color: rgba($color-5, 1);
+    }
+  }
+  
+  .cd-download {
+    /* download button top-right visible on big devices */
+    background-color: lighten($color-2, 10%);
+  
+    .no-touch &:hover {
+      background-color: lighten($color-2, 15%);
+    }
+  
+    span {
+      /* tooltip */
+      background: $color-1;
+      color: $color-5;
+  
+      &::before {
+        /* right arrow color */
+        border-color: $color-1;
+      }
+    }
+  }
+
+  /* -------------------------------- 
+
+xSite Navigation
+
+-------------------------------- */
+.cd-navigation > .cd-box {
+  width: 50%;
+  background-color: rgba($color-1, 80%);
+  border: none;
+}
+
+.cd-navigation .cd-box .cd-box {
+  background-color: transparent;
+  border: none;
+  line-height: 2.5em;
+}
+
+.cd-primary-nav ul li a {
+  color: white;
+  font-family: $secondary-font;
+  margin: 20px;
+  
+}
+
+.cd-box h3 {
+  background-color: rgba(white, 80%);
+  text-indent: 5px;
+  margin-left: -20px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.cd-box h3::before {
+  content: url("..\assets\fishsmall.png");
+  margin: 10px;
+}
+
